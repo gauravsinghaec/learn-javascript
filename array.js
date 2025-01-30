@@ -35,3 +35,5 @@ console.log("Length of countries array -> ", len);
 // How to print last country in the countries array?
 console.log("Last country in the countries array -> ", countries[len - 4]);
 // [ 'Finland', 'Sweden (Updated)', 'Norway', {}, [], '' ]
+
+// map , filter, find , reduce Requires knowledge of functions
