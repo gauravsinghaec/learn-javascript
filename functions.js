@@ -1,3 +1,13 @@
+// const newName1 = getName1({ name: "Gaurav" });
+// const newName2 = getName2({ name: "Gaurav" });
+// const newName4 = getName4({ name: "Gaurav" });
+
+// console.log(newName1, newName2, newName4);
+
+// const newName1 = getName1({ name: "Gaurav" });
+const newName1 = getName1;
+// console.log("newName1-->", newName1({ name: "Gaurav" }));
+
 function start() {
   // Function Declaration/ Definition
   console.log("This is a function"); // statement 1
@@ -21,7 +31,7 @@ const val1 = stop;
 //   const x = 10; // statement 1
 //   return x; // statement 2
 // }
-
+let t = 10;
 const val2 = stop();
 
 const val3 = val1(); //--> stop()
@@ -89,18 +99,18 @@ console.log(n);
 
 // -------------- Arrow Function ---------------- //
 
-function getName(o) {
+function getName1(o) {
   return o.name;
 }
 
-const getName = function (o) {
+const getName2 = function (o) {
   return o.name;
 };
 
-const getName = function somename(o) {
+const getName3 = function somename(o) {
   return o.name;
 };
 
-const getName = (o) => {
+const getName4 = (o) => {
   return o.name;
 };

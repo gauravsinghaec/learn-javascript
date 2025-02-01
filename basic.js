@@ -1,7 +1,9 @@
+// console.log(y); // ReferenceError: Cannot access 'y' before initialization
+console.log(s);
 const y = 10;
 let z = 20;
 const test = true;
-
+var s = "Hello";
 console.log(typeof x); // undefined
 console.log(typeof y); // number
 console.log(typeof z); // number
