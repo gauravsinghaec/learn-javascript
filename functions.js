@@ -1,13 +1,3 @@
-// const newName1 = getName1({ name: "Gaurav" });
-// const newName2 = getName2({ name: "Gaurav" });
-// const newName4 = getName4({ name: "Gaurav" });
-
-// console.log(newName1, newName2, newName4);
-
-// const newName1 = getName1({ name: "Gaurav" });
-const newName1 = getName1;
-// console.log("newName1-->", newName1({ name: "Gaurav" }));
-
 function start() {
   // Function Declaration/ Definition
   console.log("This is a function"); // statement 1
@@ -61,56 +51,3 @@ const x = function () {
 };
 
 x(); // Function call/ Invoking the function
-
-// IIFE - Immediately Invoked Function Expression
-
-const myName = (function name1() {
-  return "Hello";
-})();
-
-{
-  function name1() {
-    return "Hello";
-  }
-
-  const myName = name1();
-}
-
-// ------------------------------ //
-
-function getName(o) {
-  return o.name;
-}
-const n = getName("hello");
-// block 1
-{
-  const p = { name: "Ima" };
-  const n = getName(p);
-  console.log("Inside block 1", n);
-}
-// block 2
-{
-  const n = getName({ name: "Yuvi" });
-  console.log("Inside block 2", n);
-}
-// block 1 = block 2
-
-console.log(n);
-
-// -------------- Arrow Function ---------------- //
-
-function getName1(o) {
-  return o.name;
-}
-
-const getName2 = function (o) {
-  return o.name;
-};
-
-const getName3 = function somename(o) {
-  return o.name;
-};
-
-const getName4 = (o) => {
-  return o.name;
-};
