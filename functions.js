@@ -27,8 +27,10 @@ const val2 = stop();
 const val3 = val1(); //--> stop()
 
 // way1 of defining a function
-function move() {
-  console.log("hello");
+{
+  function move() {
+    console.log("hello");
+  }
 }
 
 // way2(Function Expression) of defining a function --
@@ -63,3 +65,42 @@ const myName = (function name1() {
 
   const myName = name1();
 }
+
+// ------------------------------ //
+
+function getName(o) {
+  return o.name;
+}
+const n = getName("hello");
+// block 1
+{
+  const p = { name: "Ima" };
+  const n = getName(p);
+  console.log("Inside block 1", n);
+}
+// block 2
+{
+  const n = getName({ name: "Yuvi" });
+  console.log("Inside block 2", n);
+}
+// block 1 = block 2
+
+console.log(n);
+
+// -------------- Arrow Function ---------------- //
+
+function getName(o) {
+  return o.name;
+}
+
+const getName = function (o) {
+  return o.name;
+};
+
+const getName = function somename(o) {
+  return o.name;
+};
+
+const getName = (o) => {
+  return o.name;
+};
