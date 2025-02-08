@@ -47,3 +47,7 @@ const isEvenAndDivisibleBy4 = (num) => {
 };
 
 const isEvenAndDivisibleBy5 = (num) => isEven(num) && isDivisibleByThree(num);
+
+
+const isEvenAndDivisibleBy6 = (num) => num % 2 === 0 && num % 3 === 0;
+

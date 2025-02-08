@@ -29,3 +29,9 @@ const vehicle = {
 // start , stop are methods of vehicle object
 
 vehicle.start();
+
+console.log(" tostring", vehicle.toString());
+
+
+// JSON.stringify();
+// <>.toString()

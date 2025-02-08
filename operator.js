@@ -40,14 +40,19 @@ console.log(a !== b);
 const t = x === y && z === 4 ? "hello" : "world";
 
 if (x === y && z === 4) {
-  return "hello";
+  console.log("hello");
 } else {
-  return "world";
+  console.log("world");
 }
 
 // ----- Logical Operators ----- TODO
 
 // ----- Bitwise Operators ----- TODO
-
-// ----- String Concatenation(Addition) ----- TODO
-// e.g "Hello" + "World";
+//Usage1 find if an number is even or odd
+const num = 40;
+if (num & 1) {
+  //4 = 1-0-0 && 1 = 0-0-1 =  0-0-0 => 0
+  console.log("odd");
+} else {
+  console.log("even");
+}
