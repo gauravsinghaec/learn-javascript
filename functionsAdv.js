@@ -1,4 +1,4 @@
-import { divider } from "./moduleNamedExport";
+import { divider } from "./moduleNamedExport.js";
 
 function startVehicle() {
   // Function Declaration/ Definition
@@ -61,4 +61,4 @@ const obj2 = useMemo(function () {
   console.log("hello");
 }, []);
 
-// here we are invoking useMemo in line 51 and 60. Both the invocation are same
+// here we are invoking useMemo in two places. Both the invocation are same
