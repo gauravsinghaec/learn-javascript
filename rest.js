@@ -17,9 +17,11 @@ subt(1);
 subt(1, 2, 3);
 
 // ---- Destructuring ---- //
-
+const state = [1, "Hello"];
 const y = [2, 45];
-const [t, s] = [1, "Hello"];
+
+const [t, s] = state;
+
 console.log(t);
 
 // ---- Destructuring with Rest Operator ---- //

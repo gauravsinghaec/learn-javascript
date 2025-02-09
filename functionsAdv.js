@@ -1,3 +1,5 @@
+import { divider } from "./moduleNamedExport";
+
 function startVehicle() {
   // Function Declaration/ Definition
   console.log("This is to start vehicle"); // statement 1
@@ -32,6 +34,31 @@ vehicle.start();
 
 console.log(" tostring", vehicle.toString());
 
-
 // JSON.stringify();
 // <>.toString()
+
+divider("passing a function as function parameter");
+
+const f1 = function () {
+  console.log("hello");
+};
+
+function useMemo(param1, param2) {
+  console.log(param1, param2);
+  param1();
+}
+
+const obj1 = useMemo(f1, []);
+
+// Function sequence-
+// Which function is defined first?
+// 1 f1, 2 useMemo
+
+// Which function is invoked first?
+// 1 useMemo, 2 f1
+
+const obj2 = useMemo(function () {
+  console.log("hello");
+}, []);
+
+// here we are invoking useMemo in line 51 and 60. Both the invocation are same

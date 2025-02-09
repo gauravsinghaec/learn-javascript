@@ -1,5 +1,7 @@
 // ----- IIFE - Immediately Invoked Function Expression-----
 
+import { divider } from "./moduleNamedExport";
+
 const myName = (function name1() {
   return "Hello";
 })();
@@ -13,6 +15,7 @@ const myName = (function name1() {
 }
 
 // Below are the examples of functions hoisting in JavaScript.
+divider("Function Hoisting");
 
 // ---------- getName1 is hoisted ------------ //
 const newName1 = getName1({ name: "Gaurav" });
@@ -35,6 +38,8 @@ const getName2 = function (o) {
   return o.name;
 };
 
+divider("Shortcut primitives return from an arrow function");
+
 const getName3 = function somename(o) {
   return o.name;
 };
@@ -45,6 +50,8 @@ const getName4 = (o) => {
 
 const getName5 = (o) => o.name;
 // getName4, getName5 are equivalent
+
+divider("Shortcut object return from an arrow function");
 
 const getName6 = (o) => {
   return {
@@ -60,9 +67,10 @@ const getName7 = (o) => ({
 
 // getName6, getName7 are equivalent
 
-const t1 = getName5({})
-console.log(t1)
+const t1 = getName5({});
+console.log(t1);
 
-const t2 = getName5() // Error: Cannot read property 'name' of undefined
-console.log(t2)
+const t2 = getName5(); // Error: Cannot read property 'name' of undefined
+console.log(t2);
 // console.log(getName6(), getName7());
+
