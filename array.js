@@ -1,3 +1,5 @@
+import { divider } from "./moduleNamedExport.js";
+
 const countries = ["Finland", "Sweden", "Norway", {}, [], ""];
 console.log(countries);
 console.log(countries[0]);
@@ -37,3 +39,8 @@ console.log("Last country in the countries array -> ", countries[len - 4]);
 // [ 'Finland', 'Sweden (Updated)', 'Norway', {}, [], '' ]
 
 // map , filter, find , reduce Requires knowledge of functions
+
+divider("Prototype chain");
+console.log(Object.keys(countries));
+console.log(countries.hasOwnProperty);
+console.log(countries.map);
