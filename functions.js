@@ -1,3 +1,12 @@
+/*
+ JavaScript functions can:
+
+ - Be stored in variables.
+ - Be returned from a function.
+ - Be passed as arguments into another function. --> Callback
+ - Be stored as property value in an Object -  Method of object
+
+*/
 function start() {
   // Function Declaration/ Definition
   console.log("This is a function"); // statement 1

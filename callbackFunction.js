@@ -1,3 +1,10 @@
+/*
+Functions that take in other functions as arguments are called 
+higher-order functions(HOF). 
+
+Functions that are passed as arguments to other functions are called 
+callback functions.
+*/
 // A function that takes another function as an argument
 function f3() {
   console.log("I am F3");
@@ -29,5 +36,5 @@ async function sayGoodbye() {
   console.log("I am F2");
 }
 
-// Calling the greet function with the sayGoodbye function as a callback
+// greet is HOF and sayGoodbye is callback function
 greet("Gaurav", sayGoodbye);

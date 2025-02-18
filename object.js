@@ -2,7 +2,9 @@ import { divider } from "./moduleNamedExport.js";
 
 let vehicle;
 
-vehicle = { type: "Car", model: "Toyota", year: 2020, new: true };
+vehicle = { type: "Car", model: "Toyota", year: 2025, new: true };
+const vehicle_2 = { type: "Car", model: "Suzuki", year: 2025, new: true };
+const vehicle_3 = { type: "Car", model: "Volkwagan", year: 2025, new: true };
 
 // console.log(vehicle["type"]);
 console.log(vehicle.type);
