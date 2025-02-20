@@ -1,8 +1,9 @@
 // Constructor functions help create multiple objects with the same structure.
 import { divider } from "../moduleNamedExport.js";
-divider("Constructor Function");
+
 
 // Not all functions are constructor function
+divider("Constructor Function without Parameters");
 function SoftwareEngineer() {
   this.primaryLang = "C";
   console.log(this);
