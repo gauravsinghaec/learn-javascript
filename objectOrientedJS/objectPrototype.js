@@ -25,6 +25,7 @@ Object.getPrototypeOf()
 divider("Prototype Chain");
 const vehicle = { year: 2020, new: true };
 
+
 function FourWheeler() {
   this.type = "Four Wheeler";
   this.name = "BMW";
@@ -45,6 +46,7 @@ const vehicle1 = Object.assign({}, vehicle);
 vehicle1.type = "Two Wheeler";
 
 // Copy object using Object.create() that creates a new object with the specified prototype object and properties.
+divider("Object creation using Object.create()");
 const vehicle2 = Object.create(vehicle);
 console.log({ vehicle2 });
 
@@ -56,5 +58,10 @@ vehicle2.type = "Four Wheeler";
 
 vehicle.color = "black";
 
+divider("New property of vihicle is not availabel on vehicle1");
 console.log(vehicle1.color);
+divider("New property of vihicle is availabel on vehicle2");
 console.log(vehicle2.color);
+
+console.log(vehicle2.engine);
+console.log(vehicle.engine);

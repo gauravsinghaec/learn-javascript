@@ -58,4 +58,9 @@ console.log(dog.getName());
 console.log("Animal.prototype -->", Animal.prototype);
 console.log("cat.__proto__ -->", cat.__proto__);
 
-console.log(cat.hasOwnProperty("eyesCount"));
+// Animal.prototype = cat.__proto__ = dog.__proto__;
+
+console.log(
+  `cat has property eyesCount --> ${cat.hasOwnProperty("eyesCount")}`
+);
+console.log(`cat has property getName --> ${cat.hasOwnProperty("getName")}`);
